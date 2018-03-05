@@ -1,0 +1,186 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) 
+	.text-item-design, .text-item-test 
+		top: 0
+		right: 20px
+		
+	.text-item-develop, .text-item-promotion
+		bottom: 0
+		left: 20px  
+		
+	.jumbotron
+		h1
+			font-size: 3em
+			margin-top: 1.3em
+			
+	.head-home
+		background: url("../img/background.header.png") no-repeat center center
+		background-size: 1700px 750px
+
+	
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.panel-body
+		time
+			display: none
+			
+	.jumbotron
+		h1
+			font-size: 2.5em
+			margin-top: 1.2em
+		p
+			font-size: 1.1em
+
+	.head-home
+		.block_header_home
+			display: none
+
+	.navbar-default
+		.navbar-nav >
+			li > a
+				font-size: 16px
+				
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.timeline-both-side
+		&:before, &:after
+			display: none
+		li
+			.border-line
+				display: none
+			&.opposite-side .border-line
+				display: none
+				&:before
+					display: none
+			.timeline-description, &.opposite-side .timeline-description
+				float: none
+				width: 100%
+			.timeline-description
+				margin-bottom: 3em
+		float: none
+		width: 100%
+
+	.navbar-default
+		.navbar-nav .open .dropdown-menu > li > a
+			color: #eee
+			&:hover, &:focus
+				color: #eee
+		.navbar-toggle .icon-bar
+			background-color: #eee
+			
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form
+		.navbar-nav
+			text-align: center
+			a
+				border-bottom: 1px solid transparent
+				&:hover
+					border-bottom: 1px solid $accent
+					
+		.navbar-right
+			text-align: center
+			li
+				display: inline-block
+				
+	.jumbotron
+		h1
+			font-size: 2.5em
+			margin-top: 2.7em 
+		p
+			font-size: 1em
+					
+
+	footer
+		text-align: center
+		
+
+	.panel-body
+		time
+			display: block
+			
+	.item-serv
+		margin-bottom: 50px
+			
+	.text-item
+		position: static
+		width: 100% 
+		text-align: center
+			
+	.text-item-design, .text-item-test 
+		top: -30px
+		right: 0
+		left: 0 
+		
+	.text-item-develop, .text-item-promotion
+		bottom: 0
+		left: 20px
+
+	.section-head-text
+		margin-top: 7px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.jumbotron
+		h1 
+			font-size: 2.1em
+			margin-top: 2.6em
+		p
+			font-size: 1em
+		.btn-head
+			padding: 5px 90px
+			z-index: 20
+    
+	.section-head-text
+		margin-top: 15px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.panel-group
+		font-size: 12px
+		
+	.jumbotron
+		h1 
+			font-size: 1.7em
+			margin-top: 2.6em
+		p
+			font-size: 0.9em
+			line-height: 1
+		.btn-head
+			padding: 5px 90px
+			z-index: 20
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

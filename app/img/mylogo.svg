@@ -1,0 +1,48 @@
+<svg id="_3logo" data-name="3logo" xmlns="http://www.w3.org/2000/svg" viewBox="1956 130 239 68">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: rgba(0,0,0,0);
+        stroke: #e67042;
+      }
+
+      .cls-3, .cls-6 {
+        fill: #e67042;
+        font-family: ACLine, AC Line;
+      }
+
+      .cls-3 {
+        font-size: 29px;
+      }
+
+      .cls-4 {
+        stroke: #67b4a9;
+      }
+
+      .cls-5 {
+        fill: #67b4a9;
+        font-size: 17px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-6 {
+        font-size: 20px;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-1" width="65" height="65" transform="translate(1956 130)"/>
+  <path id="Path_3" data-name="Path 3" class="cls-2" d="M4.063,3.692,59.443,59.36" transform="translate(1956.5 130.5)"/>
+  <path id="Path_2" data-name="Path 2" class="cls-2" d="M60.465,2.9,5.983,59.67" transform="translate(1956.5 130.5)"/>
+  <text id="М" class="cls-3" transform="translate(1981 153)"><tspan x="0" y="0">М</tspan></text>
+  <text id="c" class="cls-3" transform="translate(1961 172)"><tspan x="0" y="0">c</tspan></text>
+  <text id="h" class="cls-3" transform="translate(1982 191)"><tspan x="0" y="0">h</tspan></text>
+  <text id="e" class="cls-3" transform="translate(2004 172)"><tspan x="0" y="0">e</tspan></text>
+  <line id="Line_7" data-name="Line 7" class="cls-4" y2="43" transform="translate(2021.5 141.5)"/>
+  <text id="Дизайн_разработка_продвижение_сайтов" data-name="Дизайн, разработка,
+продвижение сайтов" class="cls-5" transform="translate(2026 159)"><tspan x="0" y="0">Дизайн, разработка,</tspan><tspan x="0" y="23">продвижение сайтов</tspan></text>
+  <text id="_." data-name="." class="cls-6" transform="translate(1995 153)"><tspan x="0" y="0">.</tspan></text>
+</svg>

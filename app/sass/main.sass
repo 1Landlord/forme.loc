@@ -1,0 +1,1444 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+html, body
+	height: 100%
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	
+*
+	box-sizing: border-box
+	padding: 0
+	&:before, &:after
+		box-sizing: border-box
+		padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden
+	background-color: $bgc
+	float: left
+	width: 100%
+	opacity: 1
+
+a
+	color: $accent
+	&:hover, &:visited
+		color: #e67042
+		
+.btn-default
+	background-color: transparent
+	border-color: $accent
+	border-radius: 0
+	transition: all .3s ease
+	&:hover
+		border-color:#72BAAC
+		background-color: transparent
+		color: $accent
+
+/*стили ссылки кнопки */
+
+.jumbotron
+	a
+		position: relative
+		display: inline-block
+		text-decoration: none
+		text-transform: uppercase
+		letter-spacing: 1px
+		outline: none
+
+	.effect-2
+		width: 250px
+		margin-top: 20px
+		padding: 20px 0
+		text-align: center
+		background-color: #EE7546
+		a
+			height: 45px
+			padding: 0 20px
+			font-weight: 300
+			line-height: 45px
+			color: #ffffff
+			&::before, &::after
+				content: ""
+				position: absolute
+				width: 45px
+				height: 2px
+				background-color: #ffffff
+				opacity: 0.2
+				transition: all 0.3s
+			&::before
+				top: 0
+				left: 0
+				transform: rotate(90deg)
+				transform-origin: 0 0
+			&::after
+				right: 0
+				bottom: 0
+				transform: rotate(90deg)
+				transform-origin: 100% 100%
+			&:hover
+				&::before, &::after
+					opacity: 1
+				&::before
+					left: 50%
+					transform: rotate(0) translateX(-50%)
+				&::after
+					right: 50%
+					transform: rotate(0) translateX(50%)
+
+/*=================================Навигация===========================*/
+
+.navbar-header
+	.navbar-brand
+		padding: 5px 0 0 10px
+		margin-right: 20px
+		z-index: 50
+		position: relative
+			
+
+
+.navbar::after
+	background-size: 3500px 40px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/for-top-effect-nav.svg")
+	bottom: -38px
+	height: 40px
+	
+				
+
+.navbar-default
+	background-color: hsla(0, 1%, 17%, 1)
+	border-color: transparent
+	.navbar-nav >
+		li > a
+			color: #eee
+			font-family: RobotoThin, sans-serif
+			font-size: 18px
+			z-index: 20
+			&:hover, &:focus
+				color: $accent
+				cursor: pointer
+		.open > a
+			background-color: transparent
+			color: #eee
+			&:hover, &:focus
+				background-color: transparent
+				color: $accent
+
+/*================================= секция header home ===========================*/
+
+.head-home
+	width: 100vw
+	height: 100vh
+	display: block
+	background: url("../img/background.header.png") no-repeat center center fixed
+	background-size: 3400px 950px
+	position: relative
+	.block_header_home
+		position: fixed
+		right: 25px
+		top: 125px
+		max-width: 200px
+		z-index: 1000
+		text-align: center
+		text-transform: uppercase
+		line-height: 1.2
+		transform: rotate(15deg)
+		.line_block_body
+			font-weight: bold
+			color: #1e9b9b
+			font-size: 14px
+		.line_block_head
+			font-family: $accent-font
+			color: $accent
+			font-size: 20px
+		.line_block_link
+			color: $accent
+			text-transform: none
+			&::before, &::after
+				content: "---"
+
+		
+	
+.wrap-head
+	width: 100%
+	height: 100%
+	background-color: rgba(255, 255, 255, .2)
+
+
+.jumbotron
+	text-align: left
+	background: transparent
+	color: darken($accent2, .5)
+	h1
+		font-size: 3,5em
+		animation-delay: 2s
+		margin-top: 1.7em
+		padding-bottom: .3em
+		font-family: $accent-font
+	p
+		font-size: 18px
+		margin-bottom: 10px
+		text-transform: uppercase
+	.btn-head
+		padding: 7px 55px
+		color: $accent2
+		font-size: 20px
+		text-transform: uppercase
+		&:hover
+			color: $accent
+		&:active
+			background-color: transparent
+
+.skill
+	animation-delay: 2.5s
+
+.hidden
+	display: none
+	
+/*=================================секция резюме===========================*/
+
+.resume
+	background-color: $accent2
+	padding: 2em 0 .5em 0
+	position: relative
+	margin: 20px 0 75px 0
+.resume::before
+	background-size: 3000px 122px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/top-effect.svg")
+	height: 172px
+	top: -171px
+
+
+.resume::after
+	background-size: 3000px 182px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/bottom-effect.svg")
+	height: 182px
+	bottom: -181px
+
+.darkSection
+	color: $textForDak
+
+.resumeContainer
+	h2
+		margin-bottom: 1.3em
+	h5
+		font-weight: 400
+	.left
+		text-align: right
+		border-right: #72BAAC 1px solid
+	.right
+		text-align: left
+ 
+
+.resumeItem
+	.year
+		color: #72BAAC
+		font-size: 1.2em
+		font-family: RobotoThin, sans-serif
+	i
+		font-size: 1.2em
+		font-family: RobotoThin, sans-serif
+	p
+		font-family: RobotoLight, sans-serif
+
+	
+/*=================================секция портфолио===========================*/
+
+.portfolio
+	background-color: #F8F8F8
+	padding: 4em 0
+	i
+		font-size: .8em
+	.card
+		max-height: 23em
+		padding: 7px
+		overflow: hidden
+
+	
+#acnostiaDesc,
+#toFrontend,
+#BusinesTheme,
+#Electromarket,
+#medicinelux
+	background: white
+	padding: 20px 20px
+	max-width: 700px
+	margin: 40px auto
+	position: relative
+
+
+.my-mfp-zoom-in
+	.zoom-anim-dialog
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-ready .zoom-anim-dialog
+		opacity: 1
+		transform: scale(1)
+	&.mfp-removing .zoom-anim-dialog
+		transform: scale(0.8)
+		opacity: 0
+	&.mfp-bg
+		opacity: 0
+		transition: opacity 0.3s ease-out
+	&.mfp-ready.mfp-bg
+		opacity: 0.8
+	&.mfp-removing.mfp-bg
+		opacity: 0
+		
+/*==========================================Секция ресурсы =========================*/
+.resources
+	padding: 5em 0
+	position: relative
+	
+.resources::before
+	background-size: 3000px 140px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/top-effect2.svg")
+	height: 140px
+	top: -139px
+
+.resources::after
+	background-size: 3000px 62px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/for-top-effect-footer.svg")
+	bottom: -61px
+	height: 62px
+	
+.lead
+	font-family: RobotoThin, sans-serif
+	color: $accent2
+
+.card
+	display: block
+	background-color: #fff
+	margin: 1em auto 2em
+	transition: box-shadow .55s
+	box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), -2px 0 5px -2px rgba(0, 0, 0, 0.2), 2px 0 5px -2px rgba(0, 0, 0, 0.2)
+	> .cardHead
+		background-color: $textForDak
+		width: 100%
+		height: 4em
+		padding-top: 1em
+		font-weight: 600
+		font-size: 24px 
+	&:hover
+		transition: box-shadow .45s
+		box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19)
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3)
+	text-align: center
+	line-height: 1.7
+	img
+		margin: 0 auto
+
+.fab
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3)
+	text-align: center
+	line-height: 1.7
+	i
+		padding: .5em
+
+.answers
+	position: relative
+	padding: 2em .5em .5em
+	font-family: "RobotoLight", sans-serif
+	color: $accent2
+	font-size: 14px 
+
+form
+	display: block
+	margin-top: 0em
+
+.answers .fab
+	position: absolute
+	top: -1.5em
+	right: .5em
+
+.fab
+	font-size: 25px
+	line-height: 1
+	width: 2em
+	height: 2em
+	cursor: pointer
+	-webkit-transition: all .3s
+	transition: all .3s
+	color: #555
+	border: none
+	border-radius: 50%
+	outline: none
+	background: #fff
+	&:hover
+		transition: box-shadow .45s
+		box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19)
+
+.answers > div
+	position: relative
+	padding: .5em
+
+	
+/*=================================секция навыки===========================*/
+
+.skills
+	background-color: $textForDak
+	padding: 4em 0
+	
+/*=================================секция путь================================*/
+
+.myWayLine
+	border-bottom: 3px solid #72BAAC
+	
+.panel-group .panel
+	border-radius: 1px
+
+/*============ timeline в обе стороны =========*/
+
+.timeline-both-side 
+	float: left
+	width: 100%
+	margin: 0 0 1em
+	position: relative
+
+/*========вертикальная шкала========*/
+
+.timeline-both-side:before
+	background-color: #72BAAC
+	bottom: 1.4em
+	content: " "
+	left: 50%
+	position: absolute
+	top: -.8em
+	width: 1px
+
+/*=============кружек в конце шкалы==============*/
+.timeline-both-side
+	&:after
+		border-radius: 50%
+		bottom: .1em
+		content: " "
+		height: 1.4em
+		width: 1.4em
+		left: 50%              /*к центру*/
+		margin-left: -.68em    /*центрируем*/
+		position: absolute
+		border: .2em solid #72BAAC
+
+
+.timeline-both-side 
+	li 
+		position: relative
+		float: left
+		width: 100%
+		
+/*======линии от шкалы к блокам=======*/
+
+.timeline-both-side li
+	.border-line
+		background-color: #72BAAC
+		font-size: 1.4em
+		height: 1px
+		left: 50%
+		margin-left: -8%
+		position: absolute
+		text-align: center
+		top: 50%
+		width: 8%
+	&.opposite-side .border-line
+		left: auto
+		right: 50%
+		margin-left: 0
+		margin-right: -8%
+		
+/*====крепления временных блоков=====*/
+
+.timeline-both-side li .border-line:before
+	background-color: #72BAAC
+	content: ""
+	height: .33em
+	position: absolute
+	right: -.21em
+	top: -0.13em
+	width: .33em
+	
+/*====линия от блока к креплению=====*/
+
+.timeline-both-side li.opposite-side .border-line:before
+	left: -0.15em
+	right: auto
+
+li
+	&.opposite-side
+		list-style: none
+	list-style: none
+
+/* block accordions*/
+
+.timeline-both-side li
+	.timeline-description
+		float: left
+		padding: 0 .7em .1em
+		position: relative
+		width: 45%
+		//background: #F8F8F8
+	&.opposite-side .timeline-description
+		float: right
+		
+/*========== timeline end =========================*/
+
+/*======Стили аккордион==========================*/
+
+.accordionBlock
+	cursor: pointer
+	margin: auto
+	text-align: center
+	font-family: RobotoLight, sans-serif 
+	color: $accent2
+
+.panel
+	transition: box-shadow .55s
+	box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), -2px 0 5px -2px rgba(0, 0, 0, 0.2), 2px 0 5px -2px rgba(0, 0, 0, 0.2)
+
+.panelHoverAccordion:hover
+	transition: box-shadow .45s
+	box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19)
+
+.panel-group .panel + .panel
+	margin-top: 15px
+	
+	
+.panel-group
+	font-size: 14px
+
+
+.blokAcc
+	text-align: center
+	padding: .3em
+	font-family: $accent-font
+	text-transform: uppercase
+
+.forEvernote
+	width: 1.8em
+	height: 1.8em
+	
+
+/*==================СТИЛИ СТРАНИЦЫ УСЛУГ====================================================*/
+
+/*===Стили блок услуги====*/
+.section-service
+	margin: 30px 0 30px
+	background-color: #FFF 
+	
+
+.section-head-text
+	background-color: $accent
+	display: inline-block
+	padding: 35px 35px
+	margin: 0px 0 50px 0 
+	font-family: $accent-font
+	font-size: 25px 
+	color: $bgc
+
+
+.thumbnail
+	border: none
+	padding: 10px
+	transition: box-shadow .55s
+	box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), -2px 0 5px -2px rgba(0, 0, 0, 0.2), 2px 0 5px -2px rgba(0, 0, 0, 0.2)
+	&:hover
+		transition: box-shadow .45s
+		box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19)
+	.caption
+		h3
+			padding-bottom: 3px
+			text-align: center
+			border-bottom: 2px solid $accentgreen
+		p
+			text-align: center
+ 
+		
+
+/*===Стили формы 1====*/
+.wrap-form
+	margin: 10px auto
+	background-color: #FFF
+	form
+		max-width: 80%
+		margin: 0 auto
+	.success
+		max-width: 80%
+		margin: 0 auto
+
+
+
+
+.form-services-1
+	.input-lg
+		border-radius: 0
+		margin-bottom: 5px
+		border-color: $accentgreen
+	.btn-lg
+		width: 100% 
+		
+/*=== / Стили блок услуги====*/
+
+
+
+/*===  Стили блок бонусы====*/
+.section-bonus
+	background-color: $accent2
+	color: $textForDak 
+	padding-bottom: 100px
+	i
+		color: $accentgreen
+		font-size: 20px  
+		padding-right: 5px 
+
+/*===  Стили блок бонусы====*/
+
+
+
+/*===  Стили блок схема ====*/
+.section-scheme
+	padding-bottom: 70px
+	position: relative
+	background-color: #f8f8f8
+
+.section-scheme::before
+	background-size: 3200px 100px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/services/top-effect-servis.svg")
+	height: 100px
+	top: -99px
+
+
+.item-scheme
+	display: flex
+	align-items: center
+	padding: 9px 0 3px 7px
+	margin-bottom: 20px 
+	transition: box-shadow .55s
+	box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), -2px 0 5px -2px rgba(0, 0, 0, 0.2), 2px 0 5px -2px rgba(0, 0, 0, 0.2)
+	&:hover
+		transition: box-shadow .45s
+		box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19)
+	.step
+		text-transform: uppercase
+		text-align: center
+		border-right: 2px solid $accentgreen 
+		margin-right: 10px 
+		padding-right: 10px 
+/*===  Стили блок схема ====*/
+
+
+
+/*===Стили блок табов====*/
+.section-tabs
+	background-color: $bgc
+	position: relative 
+
+
+.section-tabs::after
+	background-size: 3900px 120px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/services/bottom-effect.svg")
+	height: 110px
+	bottom: -110px
+
+.text-mini
+	color: #999
+	
+.razrab
+	margin: 100px 
+	
+.table-hover>tbody>tr:hover
+	background-color: $accentgreen
+
+.for-style-tabs
+	.headings-tabs
+		font-family: $accent-font
+	.nav-tabs>li>a:hover
+		border-color: transparent
+	.nav.nav-tabs a
+		color: $accent2
+		font-size: inherit 
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover
+		border: 1px solid $accentgreen
+		border-bottom: 1px solid $bgc
+	.nav-tabs>li.active>a
+		border-radius: 0
+	.nav-tabs
+		border-bottom: 1px solid $accentgreen
+		li.active>a
+			&:hover, &:focus, &:active
+				background-color: transparent
+				color: $accent
+				border-radius: 0
+				
+		
+
+.left-tab, .right-tab, .tab-footer 
+	padding: 5px
+
+
+.right-border 
+	border-right: 1px solid $accentgreen
+	
+.tab-money
+	.tab-money-parag
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		align-items: center
+		.money-icon
+			font-size: 30px
+			padding: 0 7px 0 7px
+			color: $accentgreen
+			
+/*===Стили форма 2====*/
+.forma-2
+	margin: 50px 0 70px 0 
+	.center-text-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 60px 0 20px 0
+	.wrap-form
+		margin-top: 85px
+		padding: 0 20px
+		.form-services-2
+			.input-lg
+				border-radius: 0
+				margin-bottom: 5px
+				border-color: $accentgreen
+			.btn-lg
+				width: 100%
+				z-index: 12
+
+	
+#myModal, #myModal-header
+	.modal-content
+		border: 1px solid $accentgreen
+		border-radius: 0
+		.modal-header
+			border-bottom: 1px solid $accentgreen
+		.modal-body
+			padding: 10px 10px 10px 30px
+			font-size: 16px
+		// .modal_soglashenia
+		// 	max-width: 80%
+		// 	margin: 0 auto
+		// ol
+		// 	li
+		// 		list-style-type: decimal 
+		// 	ul
+		// 		li
+		// 			list-style-type: square
+		.modal-footer
+			border-top: 1px solid $accentgreen
+
+			
+#myModal-header
+	.modal-content
+		.modal-body
+			padding: 10px 
+
+
+/* Блок сайт под ключ */
+
+.section_sait_pod_kluch
+	background-color: $textForDak
+	position: relative
+	.content_sait_pod_kluch
+		background-color: $bgc 
+		transition: box-shadow .55s
+		box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), -2px 0 5px -2px rgba(0, 0, 0, 0.2), 2px 0 5px -2px rgba(0, 0, 0, 0.2)
+		&:hover
+			transition: box-shadow .45s
+			box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19)
+		margin-bottom: 50px 
+		.content_sait_pod_kluch-head
+			border-bottom: 1px solid $accent
+			padding: 7px
+			text-align: center  
+		.content_sait_pod_kluch-body
+			padding: 7px 7px 7px 30px
+
+
+.section_sait_pod_kluch::before
+	background-size: 3300px 110px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/services/top-effect2-servis.svg")
+	height: 110px
+	top: -105px
+
+.section_sait_pod_kluch::after
+	background-size: 3000px 62px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/services/for-top-effect-footer-servis.svg")
+	bottom: -61px
+	height: 62px
+	
+
+/* /Блок FAQ */
+/*  /СТИЛИ СТРАНИЦЫ УСЛУГ */
+
+//Блок новостей главная и карточка блога, категорий
+.news-wrap
+	margin: 25px 0 50px 0
+	.card
+		margin-top: 0
+	div.header-news
+		background-color: $bgc
+		padding: 15px 15px 25px 25px
+		margin-bottom: 15px
+		i
+			font-size: 60px
+		h3
+			font-family: $accent-font
+		>div
+			margin-top: 30px
+			text-align: right  
+		span::before 
+			content: ''
+			position: absolute
+			width: 2em
+			height: 2em
+			background: $bgc
+			transform: rotate(45deg)
+			right: .2em
+			top: 5em
+	.item-news
+		padding: 15px 15px 27px 15px
+		margin-bottom: 15px 
+		transition: box-shadow .55s
+		box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), -2px 0 5px -2px rgba(0, 0, 0, 0.2), 2px 0 5px -2px rgba(0, 0, 0, 0.2)
+		&:hover
+			transition: box-shadow .45s
+			box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.10)
+		.body-item-news
+			p
+				padding-bottom: 10px
+		.btn-bottom
+			position: absolute
+			bottom: 20px
+			right: 30px
+		h3
+			font-family: $accent-font
+	h1, h2, h3
+		font-family: $accent-font
+	.answers
+		text-align: left
+		padding: 5px 10px
+		h3
+			margin: 5px 0
+		.entry-post-meta-wrap
+			padding: 0
+
+
+.entry-post-meta-wrap 
+	ul.entry-meta
+		li 
+			display: inline
+			font-size: 11px
+			line-height: 1.4
+			margin-right: 7px
+			vertical-align: middle
+
+/* СТИЛИ BLOG*/
+
+.blogs, .item-article, .category-blog
+	position: relative
+	background-color: $bgc
+	padding-top: 100px
+	padding-bottom: 50px
+	h1, h2, h3
+		font-family: $accent-font
+
+.blog_block
+	hr
+		border-top: 1px solid $textForDak
+        
+/* _ Blog Post _ */
+
+.blog_post_img
+    overflow: hidden
+    float: left
+    position: relative
+    max-width: 500px
+    margin-right: 20px
+    background-color: #000
+    img
+        width: 100%
+        transition: all 0.3s ease-in-out
+
+.blog_post
+    margin: 30px 0
+    padding-bottom: 10px
+    &:hover .blog_post_img img
+        opacity: 0.5
+    a.zoom
+        position: absolute
+        z-index: 30
+        left: 50%
+        bottom: 50px
+        width: 60px
+        height: 36px
+        margin: 0 0 -30px -30px
+        opacity: 0
+        background-image: url(../img/zoom.png)
+        background-repeat: no-repeat
+        background-position: 0 0
+        background-size: 100% auto
+        transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out
+    &:hover a.zoom
+        bottom: 50%
+        opacity: 1
+    a.zoom:hover
+        background-image: url(../img/zoom_h.png)
+
+
+.blog_post_date
+    text-transform: uppercase
+    line-height: 14px
+    font-size: 11px
+
+.blog_post_title
+    &:hover
+        color: #666
+
+.blog_post_info li
+    position: relative
+    display: inline-block
+    padding-right: 25px
+    font-size: 12px
+    &:before
+        content: ''
+        position: absolute
+        right: 9px
+        top: 5px
+        height: 15px
+        width: 1px
+        background-color: $textForDak
+    &:last-child:before
+        display: none
+        
+
+.blog_post_content
+    padding-bottom: 10px
+    font-size: 16px
+
+.blog_post .read_more_btn
+    font-weight: 500
+    font-size: 15px
+    &:hover
+        color: #666
+
+
+/* _ Pagination _*/
+
+.pagination
+    display: block
+    margin: 0 0 50px
+    padding: 0
+    border-radius: 0
+    li
+        float: left
+        width: 68px
+        height: 70px
+        a
+            float: none
+            display: block
+            margin: 0
+            padding: 0
+            border: 0
+            font-weight: 900
+            text-align: center
+            line-height: 68px
+            font-size: 20px
+            color: $textForDak
+            background: none
+            &:focus, &:hover
+                background: none
+                color: darken($textForDak, 30%)
+        &.active a
+            border: 2px solid darken($textForDak, 30%) !important
+            font-size: 26px
+            color: darken($textForDak, 30%) !important
+            background: none !important
+
+
+/* --SIDEBAR-- */
+
+.sidepanel
+    margin-bottom: 25px
+
+.sidebar hr
+    border-color: $textForDak
+    margin: 20px 0
+
+/* _ Widjet Meta _*/
+
+.widget_meta
+    margin-top: 30px
+    li
+        position: relative
+        padding: 13px 10px 12px 30px
+        border-top: 1px solid $textForDak
+        &:last-child
+            border-bottom: 1px solid $textForDak
+        &:before
+            content: '°'
+            position: absolute
+            left: 10px
+            top: 10px
+            font-size: 27px
+            color: #ccc
+            transition: all 0.3s ease-in-out
+        &:hover:before
+            color: darken($textForDak, 50%)
+        a
+            display: inline-block
+            line-height: 24px
+            font-size: 20px
+            color: darken($textForDak, 30%)
+            &:hover
+                color: darken($textForDak, 50%)
+
+
+/* __ Text Widget ___*/
+
+.widget_text p
+    line-height: 26px
+    font-size: 16px
+
+/* ____ Recent Posts Sidebar ___*/
+
+.recent_posts_widget
+    margin-bottom: 25px
+
+.post_item_img_widget
+    overflow: hidden
+    margin-bottom: 16px
+    background-color: #000
+    img
+        width: 100%
+        height: auto
+        transition: opacity 0.3s ease-in-out
+        -webkit-transition: opacity 0.3s ease-in-out
+
+.recent_posts_widget:hover .post_item_img_widget img
+    opacity: 0.5
+
+.post_item_content_widget a.title
+    display: block
+    line-height: 21px
+    font-size: 18px
+    color: #333
+
+.post_item_content_widgeta.title:hover
+    color: #666
+
+.post_item_inf_widget li
+    display: inline-block
+    padding-top: 12px
+    padding-right: 10px
+    line-height: 17px
+    font-size: 11px
+    color: #999
+
+/* - Стили списка - */
+.bullet
+	margin-left: 0
+	list-style: none
+	counter-reset: li
+	li
+		position: relative
+		margin-bottom: 1.5em
+		border: 3px solid #CADFCF
+		padding: 0.7em
+		border-radius: 5px
+		background: #FEFEFE
+		font-family: "Trebuchet MS", "Lucida Sans"
+		&:before
+			position: absolute
+			top: -1em
+			padding-left: 0.52em
+			padding-right: 0.52em
+			font-size: 16px
+			font-weight: bold
+			color: $accent
+			background: #FEFEFE
+			border: 3px solid #CADFCF
+			border-radius: 50%
+			counter-increment: li
+			content: counter(li)
+
+
+
+.aside-post
+	margin-bottom: 45px
+	.social-profile li
+		display: inline-block
+		padding: 5px 
+
+//article
+
+.article_margin
+	margin: 25px 0
+
+.article-img
+	border: 2px solid $accentgreen
+
+.admin
+	width: 22px
+
+
+// Хлебные крошки
+.breadcrumbs
+    padding: 40px 20px
+    background-color: lighten($accentgreen, 35%)
+    text-align: center
+    width: 100%
+    margin-top: 2em
+    display: inline-block
+    color: black
+    box-shadow: 0 0 2px #CADECE
+    counter-reset: flag
+    a
+        position: relative
+        float: left
+        padding-left: 60px
+        padding-right: 10px
+        text-decoration: none
+        line-height: 36px
+        color: black
+        background-color: #EAF5F3
+        transition: background-color 0.1s
+        &::after
+            content: ""
+            position: absolute
+            top: 0
+            right: -18px
+            z-index: 1
+            width: 36px
+            height: 36px
+            background-color: #EAF5F3
+            border-radius: 50px 0 0 0
+            box-shadow: 1px 1px 0 0 lighten($accentgreen, 35%)
+            transform: rotate(-45deg) scale(0.73)
+            transition: background-color 0.1s
+        &:hover, &.active
+            background-color: #E67042
+            &::after
+                background-color: #E67042
+        &::before
+            content: counter(flag)
+            position: absolute
+            top: 8px
+            left: 30px
+            line-height: 20px
+            box-shadow: 0 0 1px 0 #E67042
+            color: #E67042
+            counter-increment: flag
+            width: 20px
+            height: 20px
+            background-color: #fff
+            border-radius: 50%
+        &:first-child
+            padding-left: 46px
+            &::before
+                left: 14px
+
+
+
+.blogs::after, .category-blog::after, .item-article::after
+	background-size: 3000px 62px
+	background-position: center bottom
+	background-repeat: no-repeat
+	content: ''
+	display: block
+	left: 0
+	position: absolute
+	width: 100%
+	visibility: visible
+	z-index: 10
+	background-image: url("../img/article/for-top-effect-footer.svg")
+	bottom: -61px
+	height: 62px
+
+
+/* /СТИЛИ BLOG*/
+
+	
+/*==================Подвал=====================*/
+
+footer
+	padding-top: 4em
+	bottom: 0
+	width: 100%
+	border: none
+	background: $accent2 url("../img/background.footer.svg") center bottom no-repeat
+	background-size: 3000px 348px
+	min-height: 150px
+	color: $textForDak
+	h4
+		color: $textForDak
+		font-family: $accent-font
+		font-size: 20px 
+	.progress
+		height: 6px 
+
+.footerSection
+	margin-top: 2.4em
+
+.nav.nav-tabs a
+	color: $textForDak
+	font-size: 14px
+
+.nav-tabs>li>a
+	&:hover, &:focus, &:active
+		background-color: transparent
+		color: $textForDak
+		border-radius: 0
+		
+.nav-tabs > li.active > a
+	color: $accent
+	background-color: transparent
+	&:focus, &:hover
+		color: $textForDak
+		background-color: transparent
+	
+.list-group-item
+	padding: 5px
+	margin: 1px
+	font-size: 14px
+	background-color: transparent
+	&:first-child, &:last-child
+		border-radius: 0
+
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover
+	background-color: transparent
+	color: $accent
+	text-indent: 7px
+
+a.list-group-item, button.list-group-item
+	color: $accent
+	transition: all 0.3s ease
+	
+
+.forCallBack
+	.callback
+		margin-top: 1.2em
+		position: relative
+	.btn-group-lg>.btn, .btn-lg, .btn-default:active:focus
+		background-color: transparent
+		color: $textForDak
+		text-transform: uppercase
+		border-radius: 0
+		margin-top: 1em
+		border-color: $textForDak
+		outline: none
+		&:hover
+		 border-color: $accent 
+		 
+
+
+.success
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: #ffffff
+	color: $accentgreen
+	font-size: 20px 
+	text-transform: uppercase
+	font-weight: bold 
+	text-align: center
+	z-index: 10
+	padding-top: 30px
+	p
+		margin: auto
+		i
+			font-size: 80px
+			color: $accent 
+			text-align: center  
+	& ~ *
+		transition: all .8s ease
+	&:active
+		& ~ *
+			opacity: 0
+			background-color: $accentgreen
+
+
+
+.MyformColor
+	color: $textForDak
+	padding: 5px
+	background-color: transparent
+	border: none
+	border-radius: 0
+	box-shadow: none
+	border-bottom: 1px solid $textForDak
+	&:focus
+		box-shadow: none
+
+
+.darkFooter
+	background: #252525
+	line-height: 1.2em
+	color: $accent2
+	padding: .8em
+	margin-top: 1em
+	text-align: center
+	.share, .start, .gag
+		padding: 7px
+	.share
+		padding-top: 10px
+	i
+		transition: all .3s ease
+		transform: scale(1.1)
+		&:hover
+			transform: scale(1.5)
+			padding: 3px
+
+	
+
+//Preloader
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: $textForDak
+	z-index: 100
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity=$opacity)
+.pulse
+	position: relative
+	left: 50%
+	top: 50vh
+	margin:
+		left: -40px
+		top: -40px
+	&:before, &:after
+		content: ''
+		border: 5px solid $accent
+		width: 80px
+		height: 80px
+		border-radius: 500px
+		position: absolute
+	&:before
+		animation: pulse-outer .8s ease-in infinite
+	&:after
+		animation: pulse-inner .8s linear infinite
+
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+
+
+@keyframes pulse-inner
+	0%
+		transform: scale(0)
+		@include opacity(0)
+	100%
+		transform: scale(1)
+		@include opacity(100)
+
+
+
+@import "media" // Всегда в конце
